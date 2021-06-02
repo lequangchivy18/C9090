@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="dich">
+    <button onclick="showTT()">Dịch</button>
+    <button onclick="save()">Lưu</button>
+    <div id="showtt"></div>
+    <script>
+        let arr01 =[];
+        let arr02 =['sư tử', 'gấu trúc', 'mèo' , 'chó'];
+        let i =0;
+        function save(){
+            arr01.push(document.getElementById('dich').value)
+        }
+        
+        function showTT(){
+            for(let j=0; i< arr01.length; j++){
+                if(arr01[i]=='lion'){
+                     document.getElementById('showtt').innerHTML=arr02[0];
+                    break;
+                }
+                if(arr01[i]=='panda'){
+                    document.getElementById('showtt').innerHTML=arr02[1];
+                    break;
+                }
+                if(arr01[i]=='cat'){
+                    document.getElementById('showtt').innerHTML=arr02[2];
+                    break;
+                }
+                if(arr01[i]=='dog'){
+                    document.getElementById('showtt').innerHTML=arr02[3];
+                    break;
+                }
+                else{
+                    document.getElementById('showtt').innerHTML= 'không có';
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
