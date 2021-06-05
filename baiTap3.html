@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÀi tập 3</title>
+</head>
+<body>
+    <script>
+        let arr =[5, 0, 34, 'o', 'h', 8, 'i', 90, 'k'];
+        let dem =0;
+        let so_sanh =0;
+        for( let i =0; i< arr.length; i++){
+            if(arr[i]<=so_sanh ||  arr[i]>so_sanh){
+                dem ++;
+            }
+        }
+        document.write('Tổng cộng có '+dem +' chữ số');
+    </script>
+</body>
+</html>

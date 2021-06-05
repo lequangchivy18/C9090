@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 06</title>
+</head>
+<body>
+    <script>
+        let nhap ='';
+        let arr =[];
+        while(nhap!=null){
+             nhap =prompt('Nhập vào các kí tự cho mảng');
+            arr.push(nhap);
+        }
+        for(let i =0; i<arr.length; i++){
+            if(arr[i]=='-'){
+                arr[i]='_'
+            }
+        }
+        document.write('Mảng của bạn là: '+ arr);
+    </script>
+</body>
+</html>
